@@ -5,7 +5,7 @@ def selectionSort(array, size) -> List[int]:
   for step in range(size):
         min_idx = step
 
-        for i in range(step + 1, size):
+        for i in range(step + 1, size-1):
 
             if array[i] < array[min_idx]:
                 min_idx = i
