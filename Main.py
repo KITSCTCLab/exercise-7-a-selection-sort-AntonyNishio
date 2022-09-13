@@ -5,7 +5,7 @@ def selectionSort(array, size) -> List[int]:
   for step in range(size):
         min_idx = step
 
-        for i in range(step + 1, size-1):
+        for i in range(step + 1, size):
 
             if array[i] < array[min_idx]:
                 min_idx = i
@@ -22,3 +22,5 @@ for item in input_data.split(', '):
   elif item.lstrip("-").isnumeric():
     data.append(int(item))
 print(selectionSort(data, len(data)))
+ 
+print(data)
